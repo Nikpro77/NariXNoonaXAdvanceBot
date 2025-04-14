@@ -1,4 +1,4 @@
-#https://codeload.github.com/KurimuzonAkuma/pyrogram/zip/refs/heads/dev
+#Stelleron_Hunter
 pyrofork==2.3.45 
 TgCrypto
 pyromod==1.5
@@ -6,7 +6,7 @@ humanize
 schedule
 APscheduler
 # --- For-Database ------------ #
-pyrofork
+pyrogram
 motor
 dnspython
 # --- For-Web-Response ------- #
