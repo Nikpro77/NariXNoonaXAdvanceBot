@@ -60,8 +60,7 @@ HELP_TXT = "<b><blockquote>𝐇𝐞𝐥𝐥𝐨!! 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 �
 ABOUT_TXT = "<b><blockquote>◈sᴜᴘʀᴇᴀᴍ: <a href=https://t.me/Stelleron_Hunter>sᴛᴇʟʟᴇʀᴏɴ</a>\n◈ᴀɴɪᴍᴇ ᴄʜᴀɴɴᴇʟ : <a href=https://t.me/anime_cruise_netflix>ᴇᴛᴇʀɴᴀʟs</a>\n◈ᴏɴɢᴏɪɴɢ ᴀɪʀɪɴɢs : <a href=https://t.me/+VxWwaMA6g_JkNTA9>ᴏɴɢᴏɪɴɢ</a>\n◈ᴇᴄᴄʜɪ ᴅᴇx : <a href=https://t.me/Ecchi_Dex>ᴇᴄᴄʜɪ</a>\n◈ʜᴇʟᴘʟɪɴᴇ : <a href=https://t.me/EternalsHelplineBot>ʜᴇʟᴘʟɪɴᴇ</a></blockquote></b>"
 
 
-START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>𝑯𝒆𝒚!! {mention} 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑪𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚. 𝑰𝒇 𝒚𝒐𝒖 𝒘𝒂𝒏𝒕 𝒕𝒐 𝒔𝒖𝒑𝒑𝒐𝒓𝒕 𝒐𝒖𝒓 𝒄𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚, 𝒚𝒐𝒖 𝒄𝒂𝒏 𝒅𝒐 𝒔𝒐 𝒃𝒚 𝒔𝒖𝒃𝒔𝒄𝒓𝒊𝒃𝒊𝒏𝒈 𝒕𝒐 𝒐𝒖𝒓 𝒄𝒉𝒂𝒏𝒏𝒆𝒍. <a href=https://t.me/Stelleron_Hunter> 𝑺𝒕𝒆𝒍𝒍𝒆𝒓𝒐𝒏</a>\n\n
-𝑻𝒉𝒂𝒏𝒌𝒔 𝑭𝒐𝒓 𝒚𝒐𝒖𝒓 𝑺𝒖𝒑𝒑𝒐𝒓𝒕</blockquote></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b><blockquote>𝐇𝐞𝐲!! {mention} 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐂𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲. 𝐈𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 𝐨𝐮𝐫 𝐜𝐨𝐦𝐦𝐮𝐧𝐢𝐭𝐲, 𝐲𝐨𝐮 𝐜𝐚𝐧 𝐝𝐨 𝐬𝐨 𝐛𝐲 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐢𝐧𝐠 𝐭𝐨 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥. @Stelleron_Hunter\n\n𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐲𝐨𝐮𝐫 𝐒𝐮𝐩𝐩𝐨𝐫𝐭</blockquote></b>")
 try:
     ADMINS=[7654385403]
     for x in (os.environ.get("ADMINS", "").split()):
