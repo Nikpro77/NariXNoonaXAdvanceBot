@@ -55,7 +55,7 @@ async def start_command(client: Client, message: Message):
                 if verify_status["link"] == "":
                     reply_markup = None
                 return await message.reply(
-                    f"Your token has been successfully verified and is valid for {get_exp_time(VERIFY_EXPIRE)}",
+                    f"Your token has been successfully verified and is valid for @Stelleron_Hunter {get_exp_time(VERIFY_EXPIRE)}",
                     reply_markup=reply_markup,
                     protect_content=False,
                     quote=True
@@ -66,8 +66,8 @@ async def start_command(client: Client, message: Message):
                 await update_verify_status(id, verify_token=token, link="")
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API, f'https://telegram.dog/{client.username}?start=verify_{token}')
                 btn = [
-                    [InlineKeyboardButton("• ᴏᴘᴇɴ ʟɪɴᴋ •", url=link)], 
-                    [InlineKeyboardButton('• ᴛᴜᴛᴏʀɪᴀʟ •', url=TUT_VID)]#,
+                    [InlineKeyboardButton("» ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪғʏ «", url=link)], 
+                    [InlineKeyboardButton('» ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ/ᴛᴜᴛᴏʀɪᴀʟ ᴠɪᴅᴇᴏ «', url=TUT_VID)]#,
                     #[InlineKeyboardButton('• ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ •', callback_data='premium')]
                 ]
                 return await message.reply(
@@ -109,7 +109,7 @@ async def start_command(client: Client, message: Message):
         try:
             messages = await get_messages(client, ids)
         except Exception as e:
-            await message.reply_text("Something went wrong!")
+            await message.reply_text("Something went wrong! @Stelleron_Hunter")
             print(f"Error getting messages: {e}")
             return
         finally:
@@ -138,7 +138,7 @@ async def start_command(client: Client, message: Message):
 
         if FILE_AUTO_DELETE > 0:
             notification_msg = await message.reply(
-                f"<b>This file will be deleted in {get_exp_time(FILE_AUTO_DELETE)}. Please save or forward it to your saved messages before it gets deleted.</b>"
+                f"<b>𝐻𝑒𝑦!! 𝑊𝑒𝑙𝑐𝑜𝑚𝑒 𝑇𝑜 𝐶𝑜𝑚𝑚𝑢𝑛𝑖𝑡𝑦. 𝐼𝑓 𝑦𝑜𝑢 𝑤𝑎𝑛𝑡 𝑡𝑜 𝑠𝑢𝑝𝑝𝑜𝑟𝑡 𝑜𝑢𝑟 𝑐𝑜𝑚𝑚𝑢𝑛𝑖𝑡𝑦, 𝑦𝑜𝑢 𝑐𝑎𝑛 𝑑𝑜 𝑠𝑜 𝑏𝑦 𝑠𝑢𝑏𝑠𝑐𝑟𝑖𝑏𝑖𝑛𝑔 𝑡𝑜 𝑜𝑢𝑟 𝑐ℎ𝑎𝑛𝑛𝑒𝑙.</b>"
             )
 
             await asyncio.sleep(FILE_AUTO_DELETE)
@@ -161,7 +161,7 @@ async def start_command(client: Client, message: Message):
                 ) if reload_url else None
 
                 await notification_msg.edit(
-                    "<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",
+                    "<b>𝑇ℎ𝑎𝑛𝑘𝑠 𝐹𝑜𝑟 𝑦𝑜𝑢𝑟 𝑆𝑢𝑝𝑝𝑜𝑟𝑡 @Anime_Eternals</b>",
                     reply_markup=keyboard
                 )
             except Exception as e:
