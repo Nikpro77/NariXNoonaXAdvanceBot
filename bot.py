@@ -141,3 +141,13 @@ class Bot(Client):
             loop.run_until_complete(self.stop())
 
 #Stelleron_Hunter
+from pyrogram import Client
+
+app = Client("my_bot")
+
+# your handlers and other setup...
+
+if __name__ == "__main__":
+    print("Bot is starting...")
+    app.run()
+ 
