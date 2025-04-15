@@ -193,4 +193,3 @@ subscribed2 = filters.create(is_subscribed2)
 subscribed3 = filters.create(is_subscribed3)
 subscribed4 = filters.create(is_subscribed4)
 
-#rohit_1888 on Tg :
