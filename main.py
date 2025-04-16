@@ -5,10 +5,13 @@ pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 
 if __name__ == "__main__":
     Bot().run()
+    
 #Stelleron_Hunter
-import asyncio
-from bot import Bot
+from keep_alive import keep_alive
 
-if __name__ == "__main__":
-    bot = Bot()
-    asyncio.run(bot.start())  # or bot.run(), depending on your bot logic
+keep_alive()  # This starts the web server
+
+# Then start your bot normally
+from bot import Bot
+Bot().run()
+
