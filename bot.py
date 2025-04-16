@@ -151,3 +151,12 @@ if __name__ == "__main__":
     print("Bot is starting...")
     app.run()
  
+
+
+#Stelleron_Hunter
+import asyncio
+from bot import Bot
+
+if __name__ == "__main__":
+    bot = Bot()
+    asyncio.run(bot.start())  # or bot.run(), depending on your bot logic
