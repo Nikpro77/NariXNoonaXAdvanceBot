@@ -17,3 +17,16 @@ keep_alive()  # This starts the web server
 from bot import Bot
 Bot().run()
 
+
+
+from pyrogram.errors import FloodWait
+import asyncio
+
+while True:
+    try:
+        Bot().run()
+    except FloodWait as e:
+        print(f"Flood wait: Sleeping for {e.value} seconds")
+        asyncio.sleep(e.value)
+        
+
