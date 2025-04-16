@@ -160,3 +160,17 @@ from bot import Bot
 if __name__ == "__main__":
     bot = Bot()
     asyncio.run(bot.start())  # or bot.run(), depending on your bot logic
+
+
+from flask import Flask, jsonify
+from threading import Thread
+
+# Create Flask app
+flask_app = Flask(__name__)
+
+@flask_app.route('/uptime', methods=['GET'])
+def uptime():
+    return jsonify({"status": "ok"}), 200
+
+def run_flask():
+    flask_app.run(host="0.0.0.0", port=int(os.environ.get("FLASK_PORT", 5000)))
