@@ -1,3 +1,5 @@
+from keep_alive import keep_alive
+keep_alive()  # Starts the small web server
 from bot import Bot
 import pyrogram.utils
 
