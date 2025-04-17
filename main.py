@@ -1,5 +1,3 @@
-from keep_alive import keep_alive
-keep_alive()  # Starts the small web server
 from bot import Bot
 import pyrogram.utils
 
@@ -9,24 +7,3 @@ if __name__ == "__main__":
     Bot().run()
     
 #Stelleron_Hunter
-from keep_alive import keep_alive
-
-keep_alive()  # This starts the web server
-
-# Then start your bot normally
-from bot import Bot
-Bot().run()
-
-
-
-from pyrogram.errors import FloodWait
-import asyncio
-
-while True:
-    try:
-        Bot().run()
-    except FloodWait as e:
-        print(f"Flood wait: Sleeping for {e.value} seconds")
-        asyncio.sleep(e.value)
-        
-
