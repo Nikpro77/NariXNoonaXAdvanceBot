@@ -141,6 +141,7 @@ class Bot(Client):
             loop.run_until_complete(self.stop())
 #Stelleron_Hunter
 # Create Flask app
+from flask import Flask
 flask_app = Flask(__name__)
 
 @flask_app.route('/uptime', methods=['GET'])
