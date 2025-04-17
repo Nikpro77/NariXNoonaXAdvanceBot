@@ -18,9 +18,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                         [InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
                         InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data='close')]
                     ]
-                ]
             )
-        )
     elif data == "about":
         await query.message.edit_text(
             text=ABOUT_TXT.format(first=query.from_user.first_name),
@@ -31,7 +29,6 @@ async def cb_handler(client: Bot, query: CallbackQuery):
                      InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close')]
                 ]
             )
-        )
     elif data == "start":
         await query.message.edit_text(
             text=START_MSG.format(first=query.from_user.first_name),
