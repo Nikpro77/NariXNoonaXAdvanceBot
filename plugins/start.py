@@ -160,7 +160,7 @@ async def start_command(client: Client, message: Message):
                 ) if reload_url else None
 
                 await notification_msg.edit(
-                    "<b><blockquote>𝑇ℎ𝑎𝑛𝑘𝑠 𝐹𝑜𝑟 𝑦𝑜𝑢𝑟 𝑆𝑢𝑝𝑝𝑜𝑟𝑡 @Anime_Eternals<blockquote></b>",
+                    "<b><blockquote>ʏᴏᴜʀ ᴠɪᴅᴇᴏ/ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇<blockquote></b>",
                     reply_markup=keyboard
                 )
             except Exception as e:
