@@ -139,32 +139,7 @@ class Bot(Client):
             self.LOGGER(__name__).info("Shutting down...")
         finally:
             loop.run_until_complete(self.stop())
-
 #Stelleron_Hunter
-from pyrogram import Client
-
-app = Client("my_bot")
-
-# your handlers and other setup...
-
-if __name__ == "__main__":
-    print("Bot is starting...")
-    app.run()
- 
-
-
-#Stelleron_Hunter
-import asyncio
-from bot import Bot
-
-if __name__ == "__main__":
-    bot = Bot()
-    asyncio.run(bot.start())  # or bot.run(), depending on your bot logic
-
-
-from flask import Flask, jsonify
-from threading import Thread
-
 # Create Flask app
 flask_app = Flask(__name__)
 
