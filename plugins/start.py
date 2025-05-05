@@ -54,7 +54,7 @@ async def start_command(client: Client, message: Message):
                 if verify_status["link"] == "":
                     reply_markup = None
                 return await message.reply(
-                    f"<b><blockquote>ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs !!, 🥳🥳\n\n»ʏᴏᴜʀ ᴛᴏᴋᴇɴ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ ᴀɴᴅ ɴᴏᴡ ᴠᴀʟɪᴅ ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}\n\n» ɴᴏᴡ ʏᴏᴜ ɢᴇᴛ ᴀᴄᴇss ʙᴏᴛs ᴏғ @Anime_Eterbals ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}",
+                    f"<b><blockquote>ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs !!, 🥳🥳\n\n»ʏᴏᴜʀ ᴛᴏᴋᴇɴ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ ᴀɴᴅ ɴᴏᴡ ᴠᴀʟɪᴅ ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}\n\n» ɴᴏᴡ ʏᴏᴜ ɢᴇᴛ ᴀᴄᴇss ʙᴏᴛs ᴏғ @Anime_Eterbals ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}</blockquote></b>",
                     reply_markup=reply_markup,
                     protect_content=False,
                     quote=True
