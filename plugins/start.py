@@ -54,7 +54,7 @@ async def start_command(client: Client, message: Message):
                 if verify_status["link"] == "":
                     reply_markup = None
                 return await message.reply(
-                    f"<b><blockquote>Your token has been successfully verified and is valid for @Stelleron_Hunter {get_exp_time(VERIFY_EXPIRE)}</blockquote></b>",
+                    f"<b><blockquote>ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs !!, 🥳🥳\n\n»ʏᴏᴜʀ ᴛᴏᴋᴇɴ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ ᴠᴇʀɪғɪᴇᴅ ᴀɴᴅ ɴᴏᴡ ᴠᴀʟɪᴅ ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}\n\n» ɴᴏᴡ ʏᴏᴜ ɢᴇᴛ ᴀᴄᴇss ʙᴏᴛs ᴏғ @Anime_Eterbals ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}",
                     reply_markup=reply_markup,
                     protect_content=False,
                     quote=True
@@ -70,7 +70,7 @@ async def start_command(client: Client, message: Message):
                     #[InlineKeyboardButton('• ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ •', callback_data='premium')]
                 ]
                 return await message.reply(
-                    f"<b><blockquote><a>Your Ads token is expired, refresh your token and try again</blockquote></b>\nToken Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nᴡʜᴀᴛ ɪs ᴛʜᴇ ᴛᴏᴋᴇɴ??\nᴛʜɪs ɪs ᴀɴ ᴀᴅs ᴛᴏᴋᴇɴ. ᴘᴀssɪɴɢ ᴏɴᴇ ᴀᴅ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}\n\nAPPLE/IPHONE USERS COPY TOKEN LINK AND OPEN IN CHROME BROWSER\n<b><blockquote>Important Notice‼️Once you click on the link do not go back/skip or close the link If you close it, your token will expire. If you accidentally close it, /start the bot and verify again‼️</blockquote></b>\n<b><blockquote expandable>We are adding a token system so that our work can continue. We aren't earning anything from this I hope you guys will still support us</a></blockquote expandable></b>\nHᴇʟᴘʟɪɴᴇ ʙᴏᴛ @EternalsHelplineBot",
+                    f"<b><blockquote><a>Your Ads token is expired, refresh your token and try again</a></blockquote></b>\n<b><blockquote>Token Timeout: {get_exp_time(VERIFY_EXPIRE)}\n\nᴡʜᴀᴛ ɪs ᴛʜᴇ ᴛᴏᴋᴇɴ??\nᴛʜɪs ɪs ᴀɴ ᴀᴅs ᴛᴏᴋᴇɴ. ᴘᴀssɪɴɢ ᴏɴᴇ ᴀᴅ ᴀʟʟᴏᴡs ʏᴏᴜ ᴛᴏ ᴜsᴇ ᴛʜᴇ ʙᴏᴛ ғᴏʀ {get_exp_time(VERIFY_EXPIRE)}\n\nAPPLE/IPHONE USERS COPY TOKEN LINK AND OPEN IN CHROME BROWSER\n</a></blockquote><b><blockquote expandable>Important Notice‼️Once you click on the link do not go back/skip or close the link If you close it, your token will expire. If you accidentally close it,</a>\n/start the bot and verify again‼️\n\nWe are adding a token system so that our work can continue. We aren't earning anything from this I hope you guys will still support us</a></blockquote expandable></b>\nHᴇʟᴘʟɪɴᴇ ʙᴏᴛ @EternalsHelplineBot",
                     reply_markup=InlineKeyboardMarkup(btn),
                     protect_content=False,
                     quote=True
