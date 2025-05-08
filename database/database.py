@@ -53,3 +53,23 @@ async def full_userbase():
 async def del_user(user_id: int):
     await user_data.delete_one({'_id': user_id})
     return
+
+# ADMIN DATA
+    async def admin_exist(self, admin_id: int):
+        found = await self.admins_data.find_one({'_id': admin_id})
+        return bool(found)
+
+    async def add_admin(self, admin_id: int):
+        if not await self.admin_exist(admin_id):
+            await self.admins_data.insert_one({'_id': admin_id})
+            return
+
+    async def del_admin(self, admin_id: int):
+        if await self.admin_exist(admin_id):
+            await self.admins_data.delete_one({'_id': admin_id})
+            return
+
+    async def get_all_admins(self):
+        users_docs = await self.admins_data.find().to_list(length=None)
+        user_ids = [doc['_id'] for doc in users_docs]
+        return user_ids
